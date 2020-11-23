@@ -1,0 +1,5 @@
+user-admin
+password-rMQ4mHjqMlpqCfRN
+
+
+mongodb+srv://admin:<password>@cluster0.u36js.mongodb.net/<dbname>?retryWrites=true&w=majority

@@ -1,0 +1,13 @@
+var Pusher = require('pusher');
+
+var pusher = new Pusher({
+  appId: '1070539',
+  key: '51bb99f87b0f71526a77',
+  secret: 'eca52354c70aceee1ff5',
+  cluster: 'ap2',
+  encrypted: true
+});
+
+pusher.trigger('my-channel', 'my-event', {
+  'message': 'hello world'
+});

@@ -1,0 +1,10 @@
+Pusher.logToConsole = true;
+ 
+const pusher = new Pusher('51bb99f87b0f71526a77', {
+    cluster: 'ap2'
+});
+
+const channel = pusher.subscribe('my-channel');
+channel.bind('my-event', function(data) {
+    alert(JSON.stringify(data));
+});
